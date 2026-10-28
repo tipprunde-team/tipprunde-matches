@@ -1,0 +1,10 @@
+# Health-Check des Match-Service (VS Code, REST Client)
+# Live-URL nach dem ersten Deploy aus dem Heroku-Dashboard (Open app) eintragen, ohne / am Ende.
+@local = http://localhost:8082
+@live = https://LIVE-URL-EINTRAGEN
+
+### Lokal, erwartet 200 {"status":"UP"}
+GET {{local}}/actuator/health
+
+### Live, erwartet 200 {"status":"UP"} (beim ersten Aufruf nach dem Schlafen bis zu 30 s)
+GET {{live}}/actuator/health
