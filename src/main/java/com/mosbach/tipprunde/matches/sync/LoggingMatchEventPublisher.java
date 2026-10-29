@@ -2,12 +2,14 @@ package com.mosbach.tipprunde.matches.sync;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnExpression;
 import org.springframework.stereotype.Component;
 
 import com.mosbach.tipprunde.matches.domain.MatchUpdated;
 
-// Übergangslösung: schreibt jedes Event ins Log, wird mit der Queue durch einen AMQP-Publisher ersetzt
+// Ohne QUEUE_URL (lokal, CI): jedes Event nur ins Log schreiben, damit der Abgleich trotzdem testbar bleibt
 @Component
+@ConditionalOnExpression("'${spring.rabbitmq.addresses:}'.isEmpty()")
 public class LoggingMatchEventPublisher implements MatchEventPublisher {
 
     private static final Logger log = LoggerFactory.getLogger(LoggingMatchEventPublisher.class);
