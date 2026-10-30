@@ -1,0 +1,17 @@
+# Aufrufe an football-data.org v4, die der Match-Service nutzt (VS Code, REST Client)
+# Token nur aus der Umgebungsvariable FOOTBALL_DATA_TOKEN, nie hier eintragen.
+# Free-Tarif: höchstens 10 Anfragen pro Minute.
+@baseUrl = https://api.football-data.org/v4
+@token = {{$processEnv FOOTBALL_DATA_TOKEN}}
+
+### 1 Wettbewerb, enthält currentSeason.currentMatchday
+GET {{baseUrl}}/competitions/BL1
+X-Auth-Token: {{token}}
+
+### 2 Spiele eines Spieltags (kurzer Abgleich alle 10 Minuten)
+GET {{baseUrl}}/competitions/BL1/matches?matchday=7
+X-Auth-Token: {{token}}
+
+### 3 Ganze Saison (Abgleich einmal täglich)
+GET {{baseUrl}}/competitions/BL1/matches
+X-Auth-Token: {{token}}
