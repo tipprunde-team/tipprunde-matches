@@ -1,7 +1,7 @@
 # Health-Check des Match-Service (VS Code, REST Client)
 # Live-URL nach dem ersten Deploy aus dem Heroku-Dashboard (Open app) eintragen, ohne / am Ende.
 @local = http://localhost:8082
-@live = https://LIVE-URL-EINTRAGEN
+@live = https://tipprunde-matches-7af1aa5190d7.herokuapp.com
 
 ### Lokal, erwartet 200 {"status":"UP"}
 GET {{local}}/actuator/health
