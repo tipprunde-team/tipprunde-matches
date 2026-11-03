@@ -12,6 +12,7 @@ import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.HttpServerErrorException;
 import org.springframework.web.client.ResourceAccessException;
 
+// KI-Log AH-13
 // Ratenlimit und Wiederholung für football-data.org: höchstens 10 Anfragen pro Minute (Free-Tarif),
 // bei 429 bis zum Zurücksetzen des Zählers warten, bei Timeout oder 5xx mit wachsender Wartezeit wiederholen
 public class RetryingRequestExecutor {

@@ -7,6 +7,7 @@ import com.mosbach.tipprunde.matches.client.dto.FdCompetition;
 import com.mosbach.tipprunde.matches.client.dto.FdMatchesResponse;
 import com.mosbach.tipprunde.matches.config.FootballDataProperties;
 
+// KI-Log AH-13
 // Echte Aufrufe über HTTP; jeder Aufruf läuft über Ratenlimit und Wiederholung
 @Component
 public class HttpFootballDataClient implements FootballDataClient {

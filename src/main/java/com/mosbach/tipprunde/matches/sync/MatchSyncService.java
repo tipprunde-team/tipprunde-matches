@@ -15,6 +15,7 @@ import com.mosbach.tipprunde.matches.domain.MatchMapper;
 import com.mosbach.tipprunde.matches.domain.MatchStatus;
 import com.mosbach.tipprunde.matches.domain.MatchUpdated;
 
+// KI-Log AH-13
 // Abgleich: holt Spiele, bildet sie ab und gibt jedes Spiel als Event weiter; der Core verarbeitet idempotent
 @Service
 public class MatchSyncService {

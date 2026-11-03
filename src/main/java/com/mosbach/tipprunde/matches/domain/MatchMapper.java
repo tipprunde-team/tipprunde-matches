@@ -7,6 +7,7 @@ import com.mosbach.tipprunde.matches.client.dto.FdMatch;
 import com.mosbach.tipprunde.matches.client.dto.FdScore;
 import com.mosbach.tipprunde.matches.client.dto.FdTeam;
 
+// KI-Log AH-13
 // Reine Abbildung von football-data.org auf das eigene Modell, ohne Netz und ohne Spring (gut testbar)
 public final class MatchMapper {
 

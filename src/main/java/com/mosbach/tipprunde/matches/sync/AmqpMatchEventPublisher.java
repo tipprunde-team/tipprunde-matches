@@ -12,6 +12,7 @@ import com.mosbach.tipprunde.matches.domain.MatchUpdated;
 
 import tools.jackson.databind.json.JsonMapper;
 
+// KI-Log AH-14
 // Schickt jedes Event als JSON in die Queue tipprunde.match-events; aktiv nur mit QUEUE_URL
 @Component
 @ConditionalOnExpression("!'${spring.rabbitmq.addresses:}'.isEmpty()")
