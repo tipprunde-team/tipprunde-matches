@@ -10,6 +10,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
 
+// KI-Log AH-13 "Baue den Match-Service, der Spiele von football-data.org holt, mit Ratenlimit und Wiederholung."
 // Startet einen Abgleich und beendet danach den Prozess, z. B. als Job im Heroku Scheduler:
 // --app.sync.mode=matchday (alle 10 Minuten) oder --app.sync.mode=season (einmal täglich)
 @Component

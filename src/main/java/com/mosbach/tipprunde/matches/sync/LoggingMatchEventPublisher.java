@@ -7,6 +7,8 @@ import org.springframework.stereotype.Component;
 
 import com.mosbach.tipprunde.matches.domain.MatchUpdated;
 
+// KI-Log AH-13 "Baue den Match-Service, der Spiele von football-data.org holt, mit Ratenlimit und Wiederholung."
+// KI-Log AH-14 "Schicke jedes Spiel als Event über CloudAMQP, ohne dass Nachrichten verloren gehen."
 // Ohne QUEUE_URL (lokal, CI): jedes Event nur ins Log schreiben, damit der Abgleich trotzdem testbar bleibt
 @Component
 @ConditionalOnExpression("'${spring.rabbitmq.addresses:}'.isEmpty()")

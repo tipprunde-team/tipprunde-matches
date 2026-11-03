@@ -19,6 +19,7 @@ import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.HttpServerErrorException;
 import org.springframework.web.client.ResourceAccessException;
 
+// KI-Log AH-13 "Baue den Match-Service, der Spiele von football-data.org holt, mit Ratenlimit und Wiederholung."
 // Ratenlimit und Wiederholung ohne echtes Warten: die Uhr springt, wenn der Sleeper "wartet"
 class RetryingRequestExecutorTest {
 

@@ -24,6 +24,7 @@ import com.mosbach.tipprunde.matches.domain.MatchUpdated;
 
 import tools.jackson.databind.json.JsonMapper;
 
+// KI-Log AH-13 "Baue den Match-Service, der Spiele von football-data.org holt, mit Ratenlimit und Wiederholung."
 // Abgleich mit echten Beispielantworten von football-data.org (Spieltag 4 beendet, Spieltag 7 angesetzt)
 class MatchSyncServiceTest {
 

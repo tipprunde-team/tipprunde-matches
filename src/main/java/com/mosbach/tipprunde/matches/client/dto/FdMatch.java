@@ -4,6 +4,7 @@ import java.time.Instant;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+// KI-Log AH-13 "Baue den Match-Service, der Spiele von football-data.org holt, mit Ratenlimit und Wiederholung."
 // Ein Spiel aus football-data.org v4, nur die Felder, die Tipprunde braucht
 @JsonIgnoreProperties(ignoreUnknown = true)
 public record FdMatch(long id, Instant utcDate, String status, Integer matchday, FdTeam homeTeam,

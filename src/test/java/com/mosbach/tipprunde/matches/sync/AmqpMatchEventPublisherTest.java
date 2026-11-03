@@ -32,6 +32,7 @@ import com.mosbach.tipprunde.matches.domain.Team;
 import tools.jackson.databind.JsonNode;
 import tools.jackson.databind.json.JsonMapper;
 
+// KI-Log AH-14 "Schicke jedes Spiel als Event über CloudAMQP, ohne dass Nachrichten verloren gehen."
 // Senden ohne echte Queue: Format laut Vertrag D.2 (dieselben Beispieldateien wie im Core), Routing und Bestätigung
 class AmqpMatchEventPublisherTest {
 
