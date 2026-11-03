@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnExpression;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-// KI-Log AH-14
+// KI-Log AH-14 "Schicke jedes Spiel als Event über CloudAMQP, ohne dass Nachrichten verloren gehen."
 // Legt die Queue dauerhaft an, falls es sie noch nicht gibt; gleiche Einstellungen wie im Core,
 // sonst lehnt RabbitMQ die zweite Deklaration ab. Ohne Queue würde der Broker die Nachrichten verwerfen.
 @Configuration

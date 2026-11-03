@@ -1,3 +1,4 @@
+# KI-Log AH-13 "Baue den Match-Service, der Spiele von football-data.org holt, mit Ratenlimit und Wiederholung."
 # Aufrufe an football-data.org v4, die der Match-Service nutzt (VS Code, REST Client)
 # Token nur aus der Umgebungsvariable FOOTBALL_DATA_TOKEN, nie hier eintragen.
 # Free-Tarif: höchstens 10 Anfragen pro Minute.

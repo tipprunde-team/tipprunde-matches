@@ -10,6 +10,7 @@ import org.springframework.web.client.RestClient;
 
 import com.mosbach.tipprunde.matches.client.RetryingRequestExecutor;
 
+// KI-Log AH-13 "Baue den Match-Service, der Spiele von football-data.org holt, mit Ratenlimit und Wiederholung."
 // HTTP-Client für football-data.org mit Timeouts, dazu Uhr und Wartefunktion (in Tests austauschbar)
 @Configuration
 public class ClientConfig {

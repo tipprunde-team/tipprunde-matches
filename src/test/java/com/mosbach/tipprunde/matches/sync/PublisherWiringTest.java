@@ -14,6 +14,7 @@ import org.springframework.boot.test.context.runner.ApplicationContextRunner;
 import com.mosbach.tipprunde.matches.config.QueueConfig;
 import com.mosbach.tipprunde.matches.config.QueueProperties;
 
+// KI-Log AH-14 "Schicke jedes Spiel als Event über CloudAMQP, ohne dass Nachrichten verloren gehen."
 // Welcher Publisher aktiv ist, entscheidet nur QUEUE_URL; es wird keine Verbindung aufgebaut
 class PublisherWiringTest {
 

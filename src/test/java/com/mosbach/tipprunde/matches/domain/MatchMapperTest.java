@@ -14,6 +14,7 @@ import com.mosbach.tipprunde.matches.client.dto.FdMatch;
 import com.mosbach.tipprunde.matches.client.dto.FdScore;
 import com.mosbach.tipprunde.matches.client.dto.FdTeam;
 
+// KI-Log AH-13 "Baue den Match-Service, der Spiele von football-data.org holt, mit Ratenlimit und Wiederholung."
 // Statusabbildung und Ergebnis nach 90 Minuten (FA-40)
 class MatchMapperTest {
 

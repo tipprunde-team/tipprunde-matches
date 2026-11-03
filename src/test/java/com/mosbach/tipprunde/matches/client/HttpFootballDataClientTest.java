@@ -24,6 +24,7 @@ import com.mosbach.tipprunde.matches.config.ClientConfig;
 import com.mosbach.tipprunde.matches.config.FootballDataProperties;
 import com.sun.net.httpserver.HttpServer;
 
+// KI-Log AH-13 "Baue den Match-Service, der Spiele von football-data.org holt, mit Ratenlimit und Wiederholung."
 // Echter HTTP-Aufruf gegen einen lokalen Ersatz-Server statt football-data.org: Pfade, Token-Header,
 // JSON-Abbildung und Wiederholung nach 429
 class HttpFootballDataClientTest {
